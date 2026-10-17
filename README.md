@@ -21,14 +21,14 @@ I build with AI coding agents every day and check their work with tests, evaluat
 
 ## 🛠️ Featured projects
 
-### Bushpass: job finder desktop app for Working Holiday backpackers *(private)*
+### Bushpass: job finder desktop app for Working Holiday backpackers *(code private, [architecture write-up public](https://github.com/seekerpunks-spec/bushpass-architecture))*
 A product that collects farm and regional job ads across Australia and works out which ones count towards a Working Holiday visa extension.
 - **Next.js + Prisma (Postgres)** app with **16 scraper adapters** behind one common interface, a scheduler that re-scrapes whichever source is most overdue, and URL + hash deduplication.
 - **Rules engine with an LLM fallback.** Hard rules decide eligibility. An OpenAI model only proposes a category as structured JSON with a confidence score, results are cached and versioned, and the LLM can never override the rules.
 - **Electron desktop app** for macOS and Windows with **signed (ed25519) update manifests**. Windows builds run on GitHub Actions, and a Cloudflare Worker in front of R2 serves updates.
 - **Licence and payments API.** A Stripe webhook issues a licence key by email, activation is tied to one device, and an LLM proxy keeps API keys off client machines.
 
-> The product is currently offline. I'm happy to give a demo or a code walkthrough on request.
+> The product is currently offline. Diagram, design decisions, code excerpts and real screenshots are in **[bushpass-architecture](https://github.com/seekerpunks-spec/bushpass-architecture)**. I'm happy to give a code walkthrough on request.
 
 ### brAIm: real-time voice AI bot for Discord *(private)*
 A Discord bot that joins a voice channel and talks through OpenAI's **real-time voice API**, but only answers when it is addressed by name. It also handles noise-gated interruptions, daily usage quotas, leaving automatically when the channel is empty, and web search plus image/video generation tools.
