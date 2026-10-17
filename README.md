@@ -30,9 +30,9 @@ A product that collects farm and regional job ads across Australia and works out
 
 > The product is currently offline. Diagram, design decisions, code excerpts and real screenshots are in **[bushpass-architecture](https://github.com/seekerpunks-spec/bushpass-architecture)**. I'm happy to give a code walkthrough on request.
 
-### brAIm: real-time voice AI bot for Discord *(private)*
+### [brAIm](https://github.com/seekerpunks-spec/braim-discord-voice-bot): real-time voice AI bot for Discord *(public)*
 A Discord bot that joins a voice channel and talks through OpenAI's **real-time voice API**, but only answers when it is addressed by name. It also handles noise-gated interruptions, daily usage quotas, leaving automatically when the channel is empty, and web search plus image/video generation tools.
-TypeScript · discord.js voice · vitest test suite.
+TypeScript · discord.js voice · vitest test suite (90 tests).
 
 ### Sales-agent message guard: ML allow/block filter *(private)*
 A lightweight local classifier, **built for a client's WhatsApp AI sales agent**, that checks messages before and after the agent replies and blocks unsafe or off-policy content, including prompt-injection attempts.
@@ -42,7 +42,7 @@ Python · scikit-learn (TF-IDF + logistic regression) · evaluation sets and reg
 A Habbo-style social game: an isometric world rendered with PixiJS, A* pathfinding, real-time multiplayer with Socket.io, chat, friends, private apartments, a shop and server-validated player trades, with PostgreSQL persistence.
 React · TypeScript · PixiJS · Node.js · Socket.io · PostgreSQL.
 
-### Multi-agent Discord orchestrator *(private, prototype)*
+### [Multi-agent Discord orchestrator](https://github.com/seekerpunks-spec/discord-agent-orchestrator) *(public, prototype, not tested live)*
 A Discord bot that routes a request to planner, developer and reviewer sub-agents, then merges their answers. It has allow-listed access and asks for confirmation before any external action.
 TypeScript · OpenAI API.
 
