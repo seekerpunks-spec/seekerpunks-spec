@@ -34,7 +34,7 @@ A product that collects farm and regional job ads across Australia and works out
 A Discord bot that joins a voice channel and talks through OpenAI's **real-time voice API**, but only answers when it is addressed by name. It also handles noise-gated interruptions, daily usage quotas, leaving automatically when the channel is empty, and web search plus image/video generation tools.
 TypeScript · discord.js voice · vitest test suite.
 
-### Convect Guard: ML allow/block message filter *(private)*
+### Sales-agent message guard: ML allow/block filter *(private)*
 A lightweight local classifier, **built for a client's WhatsApp AI sales agent**, that checks messages before and after the agent replies and blocks unsafe or off-policy content, including prompt-injection attempts.
 Python · scikit-learn (TF-IDF + logistic regression) · evaluation sets and regression tests · dependency-free inference.
 
